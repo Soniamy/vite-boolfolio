@@ -22,8 +22,12 @@ export default {
       <p>
         Category:<span>{{ post.category.title }}</span>
       </p>
-      <p v-for="technology in post.technologies" :key="technology.id">
-        Technology <span>:{{ technology.title }}</span>
+      <p>
+        Technology:<span
+          v-for="technology in post.technologies"
+          :key="technology.id"
+          >{{ technology.title }},</span
+        >
       </p>
     </div>
   </div>
